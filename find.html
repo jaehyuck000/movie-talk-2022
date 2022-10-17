@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find - Kokoa clone</title>
+</head>
+
+<body>
+    <div class="status-bar">
+        <div class="status-bar__column">
+            <span>No Service</span>
+            <i class="fa-solid fa-wifi"></i>
+        </div>
+
+        <div class="status-bar__column">
+            <span>18:43</span>
+        </div>
+        <div class="status-bar__column">
+            <span>110%</span>
+            <i class="fa-solid fa-battery-full fa-lg"></i>
+            <i class="fa-solid fa-bolt"></i>
+        </div>
+    </div>
+
+    <header class="screen-header">
+        <h1 class="screen-header__title">Find</h1>
+        <div class="screen-header__icons">
+            <span><i class="fa-solid fa-magnifying-glass fa-lg"></i></span>
+            <span><i class="fa-solid fa-gear fa-lg"></i>
+                <div class="point"></div>
+            </span>
+        </div>
+    </header>
+
+
+    <main class="main-screen">
+        <div class="find-icons">
+            <div class="find-icons__icon"><i class="fa-solid fa-qrcode"></i><span>Qr code</span></div>
+            <div class="find-icons__icon"><i class="fa-regular fa-address-book"></i><span>Add by contacts</span></div>
+            <div class="find-icons__icon"><i class="fa-solid fa-fingerprint"></i><span>Add by ID</span></div>
+            <div class="find-icons__icon"><i class="fa-regular fa-envelope"></i><span>Invite</span></div>
+        </div>
+
+        <div class="recommended-friends">
+            <h6 class="recommended-friends__title">Recommended friends</h6>
+            <span>You have no recommended friends</span>
+        </div>
+
+        <div class="open-chat">
+            <div class="open-chat__header">
+                <h4>영화모임</h4>
+                <span>Go to openchat Home<i class="fa-solid fa-chevron-right fa-sm"></i></span>
+            </div>
+            <div class="open-post">
+                <div class="open-post__column">
+                    <h5 class="open-post__title">#영화</h5>
+                    <h6 class="open-post__hashtags">#영화#모임#리뷰</h6>
+                    <div class="open-post__members">
+                        <img src="https://cdn.pixabay.com/photo/2020/09/01/06/00/sky-5534319__340.jpg" />
+                        <span class="open-post__member-count">882 members</span>
+                        <div class="divider"></div>
+                        <span class="open-post__member-status">Active</span>
+                    </div>
+                </div>
+                <div class="open-post__column">
+                    <div class="open-post__photo">
+                        <img
+                            src="data:image/png;base64,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" />
+                        <div class="open-post__heart-count">
+                            <i class="fa-solid fa-heart fa-xs"></i><span>326</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+    </main>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__btn"><a class="nav__link" href="friends.html"><i class="fa-solid fa-film fa-2x"></i></a>
+            </li>
+            <li class="nav__btn"><a class="nav__link" href="chats.html"><span class="nav__notification badge">1</span><i
+                        class="far fa-comment fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="find.html"><i
+                        class="fa-sharp fa-solid fa-magnifying-glass-plus fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="more.html"><span class="nav__notification2"> </span><i
+                        class="fa-solid fa-ticket fa-2x"></i></a></li>
+        </ul>
+    </nav>
+
+    <div id="no-mobile">
+        <span>화면을 줄여주세요.</span>
+    </div>
+    <script src="https://kit.fontawesome.com/0887673c49.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

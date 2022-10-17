@@ -1,0 +1,12 @@
+.welcome-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+}
+
+.welcome-header__text {
+    text-align: center;
+}
